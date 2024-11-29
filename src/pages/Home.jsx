@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { TbTargetArrow } from "react-icons/tb";
 import { HiUsers } from "react-icons/hi";
@@ -7,7 +7,12 @@ import { FiInfo } from "react-icons/fi";
 import Card from "../components/cards/Card";
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-14 lg:pt-20">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-14 lg:pt-20"
+    >
       <div className="container mx-auto px-5 py-10 lg:px-20 lg:py-16 text-center  ">
         <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-8 lg:p-10 transform transition-all ">
           <h1 className="text-[2rem] lg:text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mb-6">
@@ -140,7 +145,7 @@ const Home = () => {
           </CardContent>
         </Card>
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 

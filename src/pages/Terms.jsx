@@ -1,8 +1,7 @@
-import React from "react";
-
+import { motion } from "framer-motion";
 const Terms = () => {
   return (
-    <main
+    <motion.main
       className="container mx-auto py-20 px-8 lg:px-20 lg:py-16 bg-gradient-to-br from-blue-50 to-indigo-100"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -124,7 +123,7 @@ const Terms = () => {
           </ul>
         </section>
       </ul>
-    </main>
+    </motion.main>
   );
 };
 
