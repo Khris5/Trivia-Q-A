@@ -23,9 +23,6 @@ const Home = () => {
             with Trivia Q and A
           </p>
           <div className="flex justify-center space-x-4">
-            {/* <button className="px-4 py-2 border-none bg-gray-950 hover:bg-gray-800 text-white rounded-md hover:transition-all shadow-md">
-              Subscribe Now
-            </button> */}
             <button className="px-4 py-2 inline-flex  items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none border-solid border-gray-200 shadow-md border text-blue-600 bg-white rounded-md hover:hover:bg-gray-100 hover:text-gray-900 hover:transition-all">
               <Link to={"/terms"}> View Terms</Link>
             </button>
@@ -102,49 +99,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <div className="container mx-auto px-4 grid md:grid-cols-3 gap-6 mt-12">
-        <Card className="hover:shadow-2xl transition-all transform hover:-translate-y-2">
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Trophy className="mr-2 text-blue-600" /> Win Prizes
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>
-              Earn points and qualify for daily airtime and monthly cash prizes!
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="hover:shadow-2xl transition-all transform hover:-translate-y-2">
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <PhoneCall className="mr-2 text-blue-600" /> Easy to Play
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>
-              Subscribe via SMS or USSD, play multiple times, and get 10 points
-              daily!
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="hover:shadow-2xl transition-all transform hover:-translate-y-2">
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Info className="mr-2 text-blue-600" /> How to Play
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ol className="list-decimal list-inside">
-              <li>Send QAD (daily) or QAM (monthly) to 3574</li>
-              <li>Get 10 points automatically</li>
-              <li>Play before 6 PM to qualify for draws</li>
-            </ol>
-          </CardContent>
-        </Card>
-      </div> */}
     </motion.div>
   );
 };
